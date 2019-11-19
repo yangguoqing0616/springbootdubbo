@@ -1,0 +1,16 @@
+dubbo:
+  #这册服务名称
+  application:
+    name: boot-user-provider
+  #指定注册中心
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  #指定服务之间的通讯协议及端口
+  protocol:
+    name: dubbo
+    port: 20881
+  #指定监控中心
+  monitor:
+    protocol: registry
+  scan:
+    base-packages: com.atbeijing.*
